@@ -1,4 +1,4 @@
-Study JAVA
+Study | JAVA
 
 
 <img src="https://img.freepik.com/premium-vector/special-programming-language-computing-platform-ad_81534-2981.jpg?w=2000" alt="Java">
@@ -9,11 +9,9 @@ Study JAVA
 
 O projeto juntamente com os estudos ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Tarefa 1 -  Tratamento de erros com thown
-- [ ] Tarefa 2 - Orientado a objetos 
-- [ ] Tarefa 3 - criação de classes
-- [ ] Tarefa 4
-- [ ] Tarefa 5
+- [x] Tarefa 1 -  Tratamento de erros com thown
+- [x] Tarefa 2 - Orientado a objetos 
+- [x] Tarefa 3 - criação de classes
 
 ## 💻 Pré-requisitos
 
@@ -22,18 +20,18 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você tem uma máquina Windows / Linux / Mac? Todos os sistemas são compativeis.
 
 
-## 🚀 Instalando <Nome-projeto>
+## 🚀 Instalando <Ficha-de-Cadastro>
 
 Para instalar o <Nome projeto>, siga estas etapas:
 
 Linux e macOS:
 ```
-git clone 
+git clone git@github.com:iKaueMatos/FichaDeCadastro-Java-POO.git
 ```
 
 Windows:
 ```
-git clone 
+git clone git@github.com:iKaueMatos/FichaDeCadastro-Java-POO.git
 
 
 ## 🤝 Colaboradores
