@@ -1,13 +1,39 @@
 package JavaFicha;
 
 public class Pessoa {
-    private String nome;  //O nome tem que ser maior ou igual a 6
-    private int idade;
-    private float altura;
-    private float peso;
-    private char sexo;
+    String nome;  //O nome tem que ser maior ou gual a 6
+    int idade;
+    float altura;
+    float peso;
 
-///Todos os metodos set São publicos porque não vao retornar nada!!
+    char sexo;
+
+    //Construtor
+    Pessoa(String nome, float peso, char sexo, float altura,int idade){
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
+        this.peso = peso;
+        this.sexo = sexo;
+    }
+
+
+    //Construtores padrão
+    public Pessoa(String nome) {
+
+    }
+
+    public Pessoa(int idade){
+
+    }
+
+  public Pessoa(float altura){
+
+  }
+
+
+
+    ///Todos os metodos set São publicos porque não vao retornar nada!!
     public void setNome(String nome){
         if(nome.length() < 6 || nome.length() > 30){
             throw  new IllegalArgumentException("Nome invalido.Minimo 6 caracteres o maximo 30 caracteres");
@@ -19,7 +45,7 @@ public class Pessoa {
 
     public void setIdade(int idade){
         if(idade <= 0 || idade >= 100){
-            throw new IllegalArgumentException("Idade invalida.Digite uma idade valida");
+            throw new IllegalArgumentException("Idade invalida. Digite uma idade valida Minimo 18 a 99");
         }else{
             this.idade = idade;
         }
@@ -27,15 +53,28 @@ public class Pessoa {
     }
 
     public void setPeso(float peso){
-
+        if(peso <= 0 ){
+            throw  new IllegalArgumentException("Peso deve ser maior do que 0");
+        }else{
+            this.peso = peso;
+        }
     }
 
     public void setAltura(float altura){
+        if(altura <= 0  ){
+            throw new IllegalArgumentException("Altura deve ser maior do que 0");
+        }else{
+            this.altura = altura;
+        }
 
     }
 
-    public void setSexo(){
-
+    public void setSexo(char sexo){
+            if (sexo != 'M' || sexo != 'F'){
+                throw new IllegalArgumentException("Digite um sexo valido,'M'- Masculino  ou F- Feminino");
+            }else{
+                this.sexo = sexo;
+            }
     }
 
 
@@ -61,6 +100,13 @@ public class Pessoa {
             return this.sexo;
     }
 
+    public void imprimirDados(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade);
+        System.out.println("Altura: " + altura);
+        System.out.println("Peso: " + peso );
+        System.out.println("Sexo: " + sexo);
+    }
 
 
 }
