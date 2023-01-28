@@ -33,7 +33,7 @@ public class Pessoa {
 
 
 
-    ///Todos os metodos set São publicos porque não vao retornar nada!!
+  
     public void setNome(String nome){
         if(nome.length() < 6 || nome.length() > 30){
             throw  new IllegalArgumentException("Nome invalido.Minimo 6 caracteres o maximo 30 caracteres");
