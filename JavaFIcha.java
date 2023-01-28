@@ -24,27 +24,29 @@ public class JavaFIcha<leitura> {
 
           System.out.println("Digite seu nome: ");
           nome = leitura.nextLine();
-          pessoaDadosFicha.setNome(nome);
+          pessoaDadosFicha.setNome(nome); // Metodos com tratamento de erros
 
           System.out.println("Digite sua idade: ");
           idade = leitura.nextInt();
           pessoaDadosFicha.setIdade(idade);
           System.out.println("Digite sua altura: ");
           altura = leitura.nextFloat();
-          pessoaDadosFicha.setAltura(altura);;
+          pessoaDadosFicha.setAltura(altura);  //Metodos com tratamento de erros
 
           System.out.println("Digite seu peso: ");
           peso = leitura.nextFloat();
-          pessoaDadosFicha.setPeso(peso);
+          pessoaDadosFicha.setPeso(peso); // Metodos com tratamento de erros
 
           System.out.println("Digite seu sexo: ");
           pessoaDadosFicha.setSexo(sexo);
-          pessoaDadosFicha.imprimirDados();
+          pessoaDadosFicha.imprimirDados(); //Metodos com tratamento de erros
 
           sexo = (char) System.in.read();
 
           pessoaDadosFicha.imprimirDados();
 
+
+          //Chamando  tratamento de erros!!
       } catch(IOException ex) {
           Logger.getLogger(JavaFIcha.class.getName()).log(Level.SEVERE, null, ex);
       }catch (IllegalArgumentException ex){
