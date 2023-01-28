@@ -44,7 +44,7 @@ public class Pessoa {
     }
 
     public void setIdade(int idade){
-        if(idade <= 0 || idade >= 100){
+        if(idade <= 17 || idade >= 100){
             throw new IllegalArgumentException("Idade invalida. Digite uma idade valida Minimo 18 a 99");
         }else{
             this.idade = idade;
